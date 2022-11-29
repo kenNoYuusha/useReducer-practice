@@ -7,7 +7,7 @@ const initialState = {
   loading: false,
 };
 
-const UseState = ({ name }) => {
+const UseReducer = ({ name }) => {
   const [state, setState] = useState(initialState);
   const { value, error, loading } = state;
 
@@ -41,11 +41,11 @@ const UseState = ({ name }) => {
       />
       <button
         onClick={() => setState({ ...state, loading: true })}
-        className="ml-4 px-4 py-2 bg-cyan-700 rounded-md hover:bg-cyan-800 active:bg-cyan-900"
+        className="ml-4 px-4 py-2 bg-indigo-700 rounded-md hover:bg-indigo-800 active:bg-indigo-900"
       >
         Comprobar
       </button>
     </div>
   );
 };
-export { UseState };
+export { UseReducer };
